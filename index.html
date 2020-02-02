@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head><!-- 
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<!-- Path to Framework7 Library CSS, Material Theme -->
+ <link rel="stylesheet" href="css/framework7.material.min.css">
+   <!-- Path to Framework7 color related styles, Material Theme -->
+ <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+       <!--  fonts Awesome -->
+ <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+        <!-- Path to your custom app styles-->
+<link rel="stylesheet" href="css/my-app.css">
+        <title>Twitter API</title>
+    </head>
+    <body class="theme-orange">
+
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-cover">
+      <div class="content-block-title">Menu</div>
+          <div class="list-block">
+            <ul>
+            <li>
+            <a href="#" class="item-link close-panel" id="auth-login">
+                <div class="item-content">
+                    <div class="item-media"><i class="fa fa-lock"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Login</div>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li>
+            <a href="index.html" class="item-link close-panel">
+                <div class="item-content">
+                    <div class="item-media"><i class="fa fa-home"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Home</div>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li>
+            <a href="cari.html" class="item-link close-panel">
+                <div class="item-content">
+                    <div class="item-media"><i class="fa fa-search"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Search</div>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li>
+            <a href="post.html" class="item-link close-panel">
+                <div class="item-content">
+                    <div class="item-media"><i class="fa fa-comment"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Post Tweet</div>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li>
+            <a href="mytimeline.html" class="item-link close-panel">
+                <div class="item-content">
+                    <div class="item-media"><i class="fa fa-user"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">My Timeline</div>
+                    </div>
+                </div>
+            </a>
+            </li>
+            <li>
+            <a href="access.html" class="item-link close-panel">
+                <div class="item-content">
+                    <div class="item-media"><i class="fa fa-gear"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Access Account</div>
+                    </div>
+                </div>
+            </a>
+            </li>
+            </ul>
+          </div>
+    </div> 
+
+<div class="views">
+    <div class="view view-main">
+        <div class="pages navbar-fixed">
+            <div class="page" data-page="index">
+                <!-- Menu atas -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left"><i class="fa fa-twitter"></i></div>
+                        <div class="center">Twitter API</div>
+                        <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+                    </div>
+                </div>
+               <!--  Konten -->
+               <div class="page-content">
+                <div class="content-block-title">Belajar TwitterOAuth</div>
+                   <div class="content-block">
+                       Menggunakan TwitterOAuth untuk REST API Twitter.
+                   </div>
+                  <div class="content-block-title">Trending Topic</div>
+                   <div class="content-block" id="trending">
+                       
+                   </div> 
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>  
+ <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    </body>
+</html>
